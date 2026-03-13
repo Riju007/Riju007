@@ -1,0 +1,20 @@
+schedule:
+  - cron: "0 0 * * *"   # Runs automatically every day at midnight
+workflow_dispatch:        # Also lets you trigger it MANUALLY with a button
+```
+
+**Step 3 — `Platane/snk@v3`**
+This is the magic action 🪄 It reads your GitHub contribution grid and generates the snake SVG animation. You give it your username and tell it where to save the output files.
+
+**Step 4 — `crazy-max/ghaction-github-pages@v3`**
+This publishes the generated SVG files to a branch called `output` in your repo — that's exactly where your README looks for the snake image!
+
+---
+
+### 🚀 How to Set It Up (3 steps)
+
+**Step 1** — Go to your profile repo: `github.com/riju007/riju007`
+
+**Step 2** — Create this file path:
+```
+.github/workflows/snake.yml
